@@ -1,0 +1,62 @@
+
+// Input: cube array
+// Output: print the cube array to terminal
+fn print_cube(cube: &Vec<Vec<u8>>){
+    for face in 0..6{
+        let mut grid: Vec<u8> = vec![];
+        for cubi in 0..4{
+            grid.push(cube[face][cubi]);
+            grid.push(cube[face][cubi+4]);
+        }
+
+        println!("\nFace:  {}", face);
+        println!("{:?}",grid);
+        println!("{:?}", &grid[0..3]);
+        println!("[{},   ,{}]", &grid[7], grid[3]);
+        println!("[{}, {}, {}]", &grid[6], &grid[5], grid[4]);
+    }
+}
+
+// Input: index of a face
+// Output: faces surrounding input face on the cube
+// Example: 0 -> [2, 4, 3, 5] NOT 1
+//          1 -> [2, 4, 3, 5] NOT 0
+//          4 -> [0, 1, 2, 3] NOT 5
+// |0|2|1|
+// | |4| |
+// | |3| |
+// | |5| |
+
+fn aj_face(index: &u8) -> Vec<u8> {
+    let mut sides:Vec<u8> = vec![];
+    let mut remove: u8 = if index % 2 == 0 { index + 1 } else { index - 1};
+
+    println!("{}", remove);
+
+    if remove % 2 == 0{
+        let t = remove + 1;
+    } else {
+        let t = remove - 1;
+    }
+
+    for i in 0..6{
+        if i != remove && i != *index {
+            sides.push(i);
+        }
+    }
+    return sides.to_vec()
+}
+
+// Input: List of u8 values
+// Output: List of u8 values, with index shifted by 1
+// Example: [1, 2, 3, 4] --> [4, 1, 2, 3]
+fn shift_index(mut input: Vec<u8>) -> Vec<u8> {
+    let cap = input.len() - 1;
+    let save = input[cap];
+    for x in 0..cap{
+        let y: usize = cap-x;
+        input[y] = input[(y+cap) % (cap+1)];
+    }
+    input[0] = save;
+    return input;
+}
