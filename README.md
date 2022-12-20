@@ -5,9 +5,9 @@
 The goal of this project is to make a Rubik’s Cube solver in Rust. The project scope may change depending on what is completed. Before moving to the next phase the previous phase must be completed. Beside each phase there is a recommended start date. 
 
 ### Phase 1 : Dec 15th 
-  - [ ] Set-up Github environment
-  - [ ] Representation of a 3x3x3 cube in rust 
-  - [ ] Ways to manipulate the cube 
+  - [x] Set-up Github environment
+  - [x] Representation of a 3x3x3 cube in rust 
+  - [x] Ways to manipulate the cube 
 
 ### Phase 2: Jan 5th 
   - [ ] Implementing Solver Algorithms
