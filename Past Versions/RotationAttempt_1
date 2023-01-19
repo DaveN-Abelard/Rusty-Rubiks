@@ -20,3 +20,18 @@ fn shift_face(mut input: Vec<u8>) -> Vec<u8> {
     input[0] = save;
     return input;
 }
+
+fn main() {
+    let cube: Vec<Vec<u8>> = vec![
+
+        vec![0; 8], // Corners 
+        vec![1; 8], // Direction of Facelet
+
+        vec![2; 12], // Edges
+        vec![3; 12]  // Direction of Facelet
+    ];
+
+    let x = find_face_corners(&cube, 1);
+    println!("{:?}", x);
+
+}
