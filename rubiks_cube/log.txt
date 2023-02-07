@@ -1,0 +1,118 @@
+commit 92eab404e57380e18b78d43a80cdba307fa46cc4
+Merge: 4153e5d 5c835ea
+Author: DaveN-Abelard <dnguyen@abelardschool.org>
+Date:   Thu Jan 19 15:44:26 2023 -0500
+
+    Merge branch 'main' of https://github.com/DaveN-Abelard/Rusty-Rubiks
+
+commit 4153e5d864c20b36d4da2c2effe1d8f9cb400b9e
+Author: DaveN-Abelard <dnguyen@abelardschool.org>
+Date:   Thu Jan 19 15:37:51 2023 -0500
+
+    changed name of src to avoid marge conflicts
+
+commit 2109126a2e98876ad9906634d988a3ef9eb59fcd
+Author: DaveN-Abelard <dnguyen@abelardschool.org>
+Date:   Thu Jan 19 15:26:48 2023 -0500
+
+    added some basic files. Cargo.toml & main.rs now utilize the cubsim library, and main has some boilerplate code with this. Also added machineLearner.py -- nothing there yet, but it will contain the Machine learning part of phase 2.
+
+commit 5c835eaf0e3f54051a4d6886b0db15ab45f6ef19
+Author: SeenTheBwean <93025688+SeenTheBwean@users.noreply.github.com>
+Date:   Thu Jan 19 15:13:39 2023 -0500
+
+    Update RotationAttempt_1
+    
+    This code *doesn't work*, this is only added to show development
+
+commit e56d0367bccaad87714dea389eb4e54808940510
+Author: SeenTheBwean <93025688+SeenTheBwean@users.noreply.github.com>
+Date:   Thu Jan 19 15:08:20 2023 -0500
+
+    Rename Attempt_1 to RotationAttempt_1
+
+commit bf2b2d5306faaf7905a2bc0bc34c4cb9940e906a
+Author: SeenTheBwean <93025688+SeenTheBwean@users.noreply.github.com>
+Date:   Thu Jan 19 15:07:00 2023 -0500
+
+    Rename Attempt_1 to Past Versions/Attempt_1
+
+commit 4914c3014d6d7f5808f09429e4e29f71b4d964ac
+Author: SeenTheBwean <93025688+SeenTheBwean@users.noreply.github.com>
+Date:   Thu Jan 19 15:02:56 2023 -0500
+
+    Create Attempt_1
+    
+    Adding *not working* attempts of implementing the storage and rotatations of a rubiks cube
+
+commit af9bf1f7c445e8e3e43054caef4ddf1f7b4228f7
+Author: SeenTheBwean <93025688+SeenTheBwean@users.noreply.github.com>
+Date:   Tue Dec 20 15:18:31 2022 -0500
+
+    Create src
+    
+    Added: Titles for indexing patterns of the cube and a edge indexing pattern.
+    Deleted: N/A
+
+commit a8c7a2f765b99a7f021ecee5edeeffa307474b95
+Author: DaveN-Abelard <104737212+DaveN-Abelard@users.noreply.github.com>
+Date:   Tue Dec 20 15:05:50 2022 -0500
+
+    Update README.md
+    
+    Updated goals.
+
+commit 36cbcfb4dd286d66acd434e8b74c744856f0c766
+Author: SeenTheBwean <93025688+SeenTheBwean@users.noreply.github.com>
+Date:   Tue Dec 20 15:04:14 2022 -0500
+
+    Update src
+    
+    Added:  How the cube is stored
+    Deleted: N/A
+
+commit b8bcbbca92e2b707feb3c9c33a9d6b487e71ee77
+Author: SeenTheBwean <93025688+SeenTheBwean@users.noreply.github.com>
+Date:   Thu Dec 15 15:57:11 2022 -0500
+
+    Create Misc_Functions
+    
+    Extra Functions that may be useful later. Includes:  print cube, shift index, adj_edges
+
+commit 12091a023cc4ee7efa32f3d3a04799a4c993307e
+Author: DaveN-Abelard <104737212+DaveN-Abelard@users.noreply.github.com>
+Date:   Tue Dec 13 15:43:26 2022 -0500
+
+    Update README.md
+
+commit 06df47d96b639f2cd6c1779a610c3aeb25953f71
+Author: DaveN-Abelard <104737212+DaveN-Abelard@users.noreply.github.com>
+Date:   Tue Dec 13 15:39:55 2022 -0500
+
+    update README.md
+
+commit 1cd06baf2ca21c4a6386ad0715ba683c53728440
+Author: SeenTheBwean <93025688+SeenTheBwean@users.noreply.github.com>
+Date:   Tue Dec 13 15:37:02 2022 -0500
+
+    Project Description
+    
+    Adding a Project Description to README.md
+
+commit fa2a232ab276888f659484444b6153975a28d1e2
+Author: SeenTheBwean <93025688+SeenTheBwean@users.noreply.github.com>
+Date:   Tue Dec 13 15:33:51 2022 -0500
+
+    Create src
+
+commit 6777b8ad603f855ebe2720b4793e980b319e437c
+Author: Dave <dave030706@gmail.com>
+Date:   Tue Dec 13 14:48:34 2022 -0500
+
+    first commit
+
+commit c4989f90c73029a6942d66bcdb4b256b45dac7b8
+Author: Dave <dave030706@gmail.com>
+Date:   Tue Dec 13 14:44:30 2022 -0500
+
+    first commit

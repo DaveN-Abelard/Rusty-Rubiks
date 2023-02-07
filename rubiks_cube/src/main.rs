@@ -35,18 +35,33 @@ fn main_OBSOLETE() {
     ];
 }
 
+use cubesim::*;
+use rand::seq::SliceRandom;
+
 fn main() {
-    use cubesim::prelude::{Cube, Face, Move, MoveVariant};
-    use cubesim::FaceletCube;
-    use cubesim::GeoCube;
  
     let cube = FaceletCube::new(3);
-    let turned_cube = cube.apply_move(Move::U(MoveVariant::Double));
-    println!("{:?}", turned_cube.state());
+    // let turned_cube = cube.apply_move(Move::U(MoveVariant::Double));
+    // println!("{:?}", turned_cube.state());
     
-    let geo_cube: GeoCube = GeoCube::new(3);
-    let turned_geo_cube: GeoCube = geo_cube.apply_move(Move::U(MoveVariant::Standard));
-    println!("{:?}", turned_geo_cube.state())
+    // let geo_cube: GeoCube = GeoCube::new(3);
+    // let turned_geo_cube: GeoCube = geo_cube.apply_move(Move::U(MoveVariant::Standard));
+    // println!("{:?}", turned_geo_cube.state());
+    
+    let scrambled_cube  = scramble(&cube);
+    println!("{:?}", scrambled_cube.state());
+}
+
+fn scramble(cube: &FaceletCube) -> cubesim::FaceletCube {
+    //The code is fairly simple & inefficient, but it works.
+    let all_moves = all_moves(cube.size());
+    let mut scrambled_cube = FaceletCube::new(cube.size());
+    for i in 0..20{
+        let mv = all_moves.choose(&mut rand::thread_rng()).clone();
+        println!("{:?}", mv);
+        scrambled_cube = cube.apply_move(*mv.unwrap());
+    }
+    return scrambled_cube;
 }
 
 fn printCube(cube: &Vec<Vec<u8>>) {

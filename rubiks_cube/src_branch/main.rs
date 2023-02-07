@@ -42,11 +42,22 @@ fn main() {
  
     let cube = FaceletCube::new(3);
     let turned_cube = cube.apply_move(Move::U(MoveVariant::Double));
-    println!("{:?}", turned_cube.state());
+    // println!("{:?}", turned_cube.state());
     
     let geo_cube: GeoCube = GeoCube::new(3);
     let turned_geo_cube: GeoCube = geo_cube.apply_move(Move::U(MoveVariant::Standard));
-    println!("{:?}", turned_geo_cube.state())
+    // println!("{:?}", turned_geo_cube.state());
+    scramble(cube);
+}
+
+fn scramble(cube: &FaceletCube) {
+    use rand::Rng;
+    let listOfMoves = [U, R, F, L, D, B];
+    let listOfVariations = [Standard, Double, Inverse];
+    // for i in 0..20{
+        
+    // }
+    println!("Done!")
 }
 
 fn printCube(cube: &Vec<Vec<u8>>) {
@@ -64,6 +75,7 @@ fn printCube(cube: &Vec<Vec<u8>>) {
     {
         printFace(cube, i)
     }
+
 }
 
 fn printFace(cube: &Vec<Vec<u8>>, face: u8) {
